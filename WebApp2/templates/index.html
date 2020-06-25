@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+    <h1>{{tit}}</h1>
+
+    {# Flask 템플린엔진(Jinja2)을 이용한 제어문 실습 #}
+    <h3>조건문</h3>
+    {% if cont %}
+    <h4>{{cont}}</h4>
+    {% else%}
+    <h4>컨텐츠 내용이 없습니다.</h4>
+    {% endif %}
+
+    <h3>반복문</h3>
+    <h4>{{data.title}}</h4>
+    <ul>
+        {% for city in data.cities %}
+        <li>{{city}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
