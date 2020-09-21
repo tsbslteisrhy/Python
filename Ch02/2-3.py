@@ -78,14 +78,14 @@ print(a.index(1))
 #리스트에 요소 삽입(insert)
 a = [1, 2, 3]
 a.insert(0, 4)
-print(a)
+print("insert :", a)
 a.insert(3, 5)
 print(a)
 
 #리스트 요소 제거(remove)
 a = [1, 2, 3, 1, 2, 3]
 a.remove(3)
-print(a)
+print("remove :", a)
 a.remove(3)
 print(a)
 
@@ -95,7 +95,7 @@ print(a.pop())       # 맨 마지막 요소 pop
 print(a)
 
 a = [1, 2, 3]
-print(a.pop(1))
+print("pop(1) :", a.pop(1))
 print(a)
 
 #리스트에 포함된 요소 x의 개수 세기(count)
